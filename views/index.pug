@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  script(src='/javascripts/main.js')
+  script(src='http://cdn.socket.io/stable/socket.io.js')
+  div#container
+    div.header
+      h1 Team Health Check
+  br
+  div
+    span Име на тимот:
+    form(method='post' action='')
+      select#click1
+        if teams
+          each team in teams
+            option= team
+          else
+            option
+      input(type='submit' id='selectTeam' value='Одбери')
+  br
+  div#show1
+    span Член на тимот:
+    select#click2
+  br
+  div#show2
+    span Прашања на кои треба да одговорите:
+    select#click3
+  br
+  form#CheckBox
+    input(type='radio' name='gender' value='grade1' class='star')
+    input(type='radio' name='gender' value='grade2' class='star')
+    input(type='radio' name='gender' value='grade3' class='star')
+    input(type='radio' name='gender' value='grade4' class='star')
+    input(type='radio' name='gender' value='grade5' class='star')
+
+  br
+  input(type='button' id='submit' value='Submit')

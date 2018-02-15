@@ -1,0 +1,100 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header > h1:nth-child(1){
+  font-family: Georgia;
+      background: -webkit-linear-gradient(left, #0C79BA , #0C79BA 30%,#2789C6 30%, #2789C6);
+      font-style: oblique;
+      color: rebeccapurple;
+  }
+  
+  body{
+      background-image: url("/images/CR.jpg");
+  
+  
+  }
+  
+  #container{
+      background-color: rebeccapurple;
+      border-radius: 25px;
+  
+  
+  
+  }
+  
+  #click1{
+      height: 40px;
+      width: 120px;
+      font-family: bold;
+      font-size: large;
+      border-radius:25px;
+  
+  
+  }
+  
+  #container > div:nth-child(2) > span:nth-child(1){
+      font-weight: bold;
+      color: rebeccapurple;
+      font-size: 20px;
+      font-style: oblique;
+  }
+  #show1 > span:nth-child(1){
+      color: rebeccapurple;
+      font-weight: bold;
+      font-size: 20px;
+      font-style: oblique;
+  }
+  
+  
+  
+  #show2{
+      font-size: 20px;
+      color:rebeccapurple;
+      font-weight: bold;
+      font-style: oblique;
+  }
+  
+  #click2{
+      border-radius:25px;
+      height: 40px;
+      width: 120px;
+      font-family: bold;
+      font-size: large;
+  }
+  
+  #click3{
+      border-radius:25px;
+      height: 40px;
+      width: 120px;
+      font-family: bold;
+      font-size: large;
+  }
+  
+  #submit{
+      background: black;
+      color: white;
+      height: 40px;
+      width: 300px;
+      border-radius:25px;
+      font-family:Georgia;
+      font-weight: bold;
+      font-size: 30px;
+  
+  }
+  
+  #CheckBox{
+  
+      font-family:Georgia;
+      font-weight: bold;
+      font-size: 15px;
+      color: rebeccapurple;
+  
+  }
+
+  
