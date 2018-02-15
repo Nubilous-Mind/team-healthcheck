@@ -3,11 +3,11 @@ var router = express.Router();
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root123',
-  database: 'ilt',
-  port: 3306
+  host     : process.env.RDS_HOSTNAME,
+  user     : process.env.RDS_USERNAME,
+  password : process.env.RDS_PASSWORD,
+  port     : process.env.RDS_PORT,
+  database : process.env.RDS_DATABASE
 });
 
 connection.connect(function(err){
@@ -20,7 +20,7 @@ connection.connect(function(err){
 
 });
 
-var teamArr = ['tim1'];
+var teamArr = [];
 
 connection.query("select * from team", function(errorQuery, result, fields){
   if(errorQuery) throw errorQuery;
